@@ -56,7 +56,7 @@
     --radius: 0.75rem;
 
     /* Tropical gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--ocean)));
     --gradient-tropical: linear-gradient(135deg, hsl(var(--ocean-light)), hsl(var(--accent)));
     --gradient-sunset: linear-gradient(135deg, hsl(var(--golden)), hsl(var(--accent-light)));
     --gradient-paradise: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--ocean-light)), hsl(var(--golden-light)));

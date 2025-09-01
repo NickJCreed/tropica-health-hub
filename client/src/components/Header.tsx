@@ -54,7 +54,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-ocean to-ocean-light hover:from-ocean-dark hover:to-ocean text-white shadow-ocean">
+            <Button className="bg-gradient-to-r from-primary to-ocean hover:from-primary-light hover:to-ocean-light text-white shadow-ocean">
               Visit Us Today
             </Button>
           </div>
@@ -78,7 +78,7 @@ const Header = () => {
               <a href="#products" className="text-foreground hover:text-primary transition-colors">Products</a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
-              <Button className="bg-gradient-to-r from-ocean to-ocean-light hover:from-ocean-dark hover:to-ocean text-white shadow-ocean w-full mt-4">
+              <Button className="bg-gradient-to-r from-primary to-ocean hover:from-primary-light hover:to-ocean-light text-white shadow-ocean w-full mt-4">
                 Visit Us Today
               </Button>
             </nav>

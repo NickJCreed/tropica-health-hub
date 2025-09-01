@@ -200,7 +200,7 @@ const Products = () => {
                   <Button 
                     className={`${
                       product.inStock
-                        ? 'bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white'
+                        ? 'bg-gradient-to-r from-primary to-ocean hover:from-primary-light hover:to-ocean-light text-white'
                         : 'bg-muted text-muted-foreground cursor-not-allowed'
                     }`}
                     disabled={!product.inStock}
@@ -243,7 +243,7 @@ const Products = () => {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-primary"
+                  className="border-white text-white hover:bg-white hover:text-primary hover:border-primary"
                 >
                   Visit Store
                 </Button>

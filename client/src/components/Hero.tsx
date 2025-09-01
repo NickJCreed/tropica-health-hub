@@ -11,7 +11,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-ocean/60 to-transparent"></div>
       </div>
 
       {/* Content */}
@@ -42,7 +42,7 @@ const Hero = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary text-lg px-8"
+                className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 hover:border-primary"
               >
                 Find Us
               </Button>
