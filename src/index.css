@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Tropica Pharmacy Design System - Tropical Paradise Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base tropical theme */
+    --background: 48 12% 97%;
+    --foreground: 150 30% 15%;
 
+    /* Cards with subtle tropical warmth */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 150 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 150 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep tropical green from logo */
+    --primary: 150 60% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 150 50% 35%;
+    --primary-lighter: 150 40% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Golden sand tones */
+    --secondary: 45 95% 85%;
+    --secondary-foreground: 150 60% 25%;
+    
+    /* Tropical accents */
+    --accent: 200 85% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 200 75% 70%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Golden highlights */
+    --golden: 42 100% 65%;
+    --golden-light: 42 100% 75%;
+    --golden-dark: 42 100% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Ocean blues */
+    --ocean: 200 100% 45%;
+    --ocean-light: 200 100% 60%;
+    --ocean-dark: 200 100% 35%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Neutral tropical tones */
+    --muted: 45 30% 92%;
+    --muted-foreground: 150 20% 40%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 150 20% 85%;
+    --input: 150 20% 90%;
+    --ring: 150 60% 25%;
+
+    --radius: 0.75rem;
+
+    /* Tropical gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-tropical: linear-gradient(135deg, hsl(var(--ocean-light)), hsl(var(--accent)));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--golden)), hsl(var(--accent-light)));
+    --gradient-paradise: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--ocean-light)), hsl(var(--golden-light)));
+
+    /* Tropical shadows */
+    --shadow-tropical: 0 10px 40px -10px hsl(var(--primary) / 0.2);
+    --shadow-golden: 0 8px 32px -8px hsl(var(--golden) / 0.3);
+    --shadow-ocean: 0 6px 24px -6px hsl(var(--ocean) / 0.25);
 
     --sidebar-background: 0 0% 98%;
 
@@ -102,4 +130,60 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Tropical Animation Effects */
+@layer utilities {
+  .tropical-gradient {
+    background: var(--gradient-tropical);
+  }
+  
+  .sunset-gradient {
+    background: var(--gradient-sunset);
+  }
+  
+  .paradise-gradient {
+    background: var(--gradient-paradise);
+  }
+  
+  .shadow-tropical {
+    box-shadow: var(--shadow-tropical);
+  }
+  
+  .shadow-golden {
+    box-shadow: var(--shadow-golden);
+  }
+  
+  .shadow-ocean {
+    box-shadow: var(--shadow-ocean);
+  }
+
+  .palm-sway {
+    animation: palm-sway 4s ease-in-out infinite;
+  }
+  
+  .wave-motion {
+    animation: wave-motion 3s ease-in-out infinite;
+  }
+  
+  .float-gentle {
+    animation: float-gentle 6s ease-in-out infinite;
+  }
+}
+
+@keyframes palm-sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes wave-motion {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  25% { transform: translateX(-5px) translateY(-2px); }
+  50% { transform: translateX(0) translateY(-4px); }
+  75% { transform: translateX(5px) translateY(-2px); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
