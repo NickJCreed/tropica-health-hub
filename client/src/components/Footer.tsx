@@ -17,7 +17,7 @@ const Footer = () => {
                 className="h-12 w-12 palm-sway"
               />
               <div>
-                <h3 className="text-2xl font-bold text-golden">Tropica Pharmacy</h3>
+                <h3 className="text-2xl font-bold text-yellow-400">Tropica Pharmacy</h3>
                 <p className="text-white/80 text-sm">Your Health, Our Priority</p>
               </div>
             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-xl font-bold text-golden">Our Services</h4>
+            <h4 className="text-xl font-bold text-yellow-400">Our Services</h4>
             <ul className="space-y-2 text-white/90">
               <li className="hover:text-golden transition-colors cursor-pointer">Prescription Medicines</li>
               <li className="hover:text-golden transition-colors cursor-pointer">Over-the-Counter Drugs</li>
@@ -65,7 +65,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-xl font-bold text-golden">Contact Info</h4>
+            <h4 className="text-xl font-bold text-yellow-400">Contact Info</h4>
             <div className="space-y-3 text-white/90">
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-golden mt-0.5 flex-shrink-0" />
@@ -88,7 +88,7 @@ const Footer = () => {
 
           {/* Opening Hours */}
           <div className="space-y-4">
-            <h4 className="text-xl font-bold text-golden">Opening Hours</h4>
+            <h4 className="text-xl font-bold text-yellow-400">Opening Hours</h4>
             <div className="space-y-3 text-white/90">
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-golden flex-shrink-0" />
