@@ -22,7 +22,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h2 className="text-5xl lg:text-7xl font-bold leading-tight">
                 Your Trusted
-                <span className="block text-golden wave-motion">Health Partner</span>
+                <span className="block text-yellow-400 wave-motion">Health Partner</span>
                 in Paradise
               </h2>
               <p className="text-xl lg:text-2xl text-white/90 max-w-2xl">
@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                className="bg-gradient-to-r from-golden to-golden-light hover:from-golden-dark hover:to-golden text-primary shadow-golden text-lg px-8"
+                className="bg-yellow-400 hover:bg-yellow-500 text-green-800 shadow-golden text-lg px-8 font-semibold"
               >
                 Explore Products
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -42,7 +42,7 @@ const Hero = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 hover:border-primary"
+                className="border-white text-white hover:bg-white hover:text-green-600 text-lg px-8 hover:border-green-600"
               >
                 Find Us
               </Button>

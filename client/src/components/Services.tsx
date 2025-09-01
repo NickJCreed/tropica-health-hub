@@ -131,7 +131,7 @@ const Services = () => {
             </CardContent>
           </Card>
 
-          <Card className="shadow-golden bg-golden text-primary">
+          <Card className="shadow-golden bg-yellow-400 text-green-800">
             <CardHeader>
               <div className="flex items-center gap-3 mb-4">
                 <Clock className="h-8 w-8 text-primary" />

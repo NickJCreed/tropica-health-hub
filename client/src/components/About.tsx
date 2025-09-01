@@ -93,7 +93,7 @@ const About = () => {
           </div>
 
           <div className="space-y-6">
-            <Card className="shadow-tropical bg-gradient-to-br from-primary to-ocean text-white p-8">
+            <Card className="shadow-tropical bg-gradient-to-br from-green-600 to-blue-500 text-white p-8">
               <CardContent className="space-y-6 p-0">
                 <div className="space-y-4">
                   <h4 className="text-2xl font-bold text-golden">Our Mission</h4>
