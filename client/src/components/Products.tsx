@@ -226,7 +226,7 @@ const Products = () => {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <Card className="bg-gradient-to-r from-primary to-ocean text-white shadow-tropical">
+          <Card className="bg-gradient-to-r from-green-600 to-blue-500 text-white shadow-tropical">
             <CardContent className="py-12 px-8">
               <h3 className="text-3xl font-bold mb-4">Need Something Specific?</h3>
               <p className="text-xl mb-6 text-white/90">
@@ -243,7 +243,7 @@ const Products = () => {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-primary hover:border-primary"
+                  className="border-white text-white hover:bg-white hover:text-green-600 hover:border-green-600"
                 >
                   Visit Store
                 </Button>
